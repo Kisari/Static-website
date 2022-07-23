@@ -35,7 +35,6 @@ footer{
 
 .footer-content nav ul li:not(:first-child) {
     margin-left: 18px;
-
 }
 
 .footer-content nav ul li a {
@@ -56,4 +55,20 @@ footer{
 .footer-description p{
     margin: 12px 0 0 0;
     padding-bottom: 8px;
+}
+@media only screen and (max-width: 960px){
+    .footer-content{
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content nav{
+        display: block;
+    }
+    .footer-content nav ul{
+        display: block;
+    }
+    .footer-content nav ul li:not(:first-child) {
+        margin-left: 0;
+    }
 }

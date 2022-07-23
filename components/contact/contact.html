@@ -5,11 +5,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/footer/footer.css">
+    <link rel="stylesheet" href="/components/header/header.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
     <title>Document</title>
 </head>
 
 <body>
+    <header>
+        <div>
+            <img src="/src/logo.png" alt="Logo image">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/main.html">Home</a>
+                </li>
+                <li>
+                    <a href="/components/catogory/catogory.html">Novels</a>
+                </li>
+                <li>
+                    <a href="/components/catogory/catogory.html">Fantasy</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form action="#" metthod="POST" enctype="multipart/form-data">
+                <div class="purpose">
+                    <label for="purpose">Choose your purpose:</label>
+                    <select name="purpose" id="purpose_input" required>
+                        <option value="Sell">I want to sell books</option>
+                        <option value="Buy">I want to buy books</option>
+                        <option selected hidden disabled>Purpose</option>
+                    </select>
+                </div>
+                <div class="cols-2">
+                    <div class="name">
+                        <label for="name">Your information</label>
+                        <input type="text" name="name" id="name_input" placeholder="Your name" required>
+                        </input>
+                    </div>
+                    <div class="email">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email_input" placeholder="Your email" required>
+                        </input>
+                    </div>
+                </div>
+                <div class="phone">
+                    <label for="phone"></label>
+                    <input type="text" name="phone" id="phone_input" placeholder="Phone number" required>
+                    </input>
+                </div>
+                <div class="checkbox">
+                    <p>How can we contact you ?</p>
+                    <label for="checkbox1">By email</label>
+                    <input type="checkbox" name="checkbox1" id="checkbox_input1" value="email">
+                    </input>
+                    <label for="checkbox2">By phone</label>
+                    <input type="checkbox" name="checkbox2" id="checkbox_input2" value="phone">
+                    </input>
+                </div>
+                <div class="radio">
+                    <p>Do you want to receive our weekly newsletter</p>
+                    <label for="radio_input1">Yes</label>
+                    <input type="radio" name="radio" id="radio_input1" value="yes" checked="checked">
+                    </input>
+                    <label for="radio_input1">No</label>
+                    <input type="radio" name="radio" id="radio_input2" value="no">
+                    </input>
+                </div>
+                <div class="note">
+                    <label for="note"></label>
+                    <textarea name="note" id="note_input" cols="30" rows="10"></textarea>
+                </div>
+                <div class="btn-group cols-2">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
 
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p><q>One tap for open the new world</q></p>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">Copy right</a>
+                    </li>
+                    <li>
+                        <a href="/components/contact/contact.html">Contact us</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-description">
+            <h2>@Copyright 2022B Web Programming</h2>
+            <p>
+                This is individual work by Minh- s3891909
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
