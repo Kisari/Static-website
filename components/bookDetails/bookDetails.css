@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+}
+main {
+    padding: 25px;
+}
+.disabled{
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+h1 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex: 1 1 auto; */
+    padding: 0;
+    margin: 0;
+}
+h1 ul li{
+    list-style-type: none;
+    width: fit-content;
+}
+h1 ul li:not(:first-child)::before{
+    content: ">";
+    padding: 0 25px 0 25px;
+}
+h1 ul li a{
+    text-decoration: none;
+    color: #fa5379;
+}
+h1 ul li a:hover{
+    text-decoration: underline;
+    color: #9a243f;
+}
+h1 ul li p{
+    margin: 0;
+    /* margin-left: 25px; */
+}
+.book-details{
+    display: flex;
+    flex-direction: row;
+}
+.illustration{
+    display: flex;
+    flex-direction: row;
+}
+.main-image div img {
+    max-height: 450px;
+    width: 340px;
+    object-fit: fill;
+}
+.main-image p {
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+}
+.sub-image{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    padding: 25px 50px;
+}
+.sub-image img{
+    width: 150px;
+    height: 90px;
+    object-fit: fill;
+}
+.sub-image img:not(:first-child){
+    margin-top: 25px;
+}
+.book-description{
+    text-align: center;
+}
+.book-description h3{
+    font-size: 1.5rem;
+    padding: 8px 12px;
+}
+.book-description p{
+    font-size: 1.2rem;
+    padding: 12px 16px;
+}
+.book-description button{
+    padding: 12px 16px;
+}
+.price{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+.book-description button:hover{
+    color: #fa5379;
+    background-color: #303334;
+}
