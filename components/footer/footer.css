@@ -1,4 +1,8 @@
-footer {
+footer{
+    background-color: #303334;
+    color: #f0f0f0;
+}
+.footer-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,16 +10,17 @@ footer {
     font-size: 1.2rem;
     font-family: sans-serif;
 }
-footer div p q{
-    font-size: 2rem;
+.footer-content div p q{
+    font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
+    user-select: none;
 }
-footer nav {
+.footer-content nav {
     display: flex;
     align-items: center;
 }
 
-footer nav ul {
+.footer-content nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,21 +28,32 @@ footer nav ul {
     margin: 25px;
 }
 
-footer nav ul li {
+.footer-content nav ul li {
     list-style-type: none;
     padding: 8px 12px;
 }
 
-footer nav ul li:not(:first-child) {
+.footer-content nav ul li:not(:first-child) {
     margin-left: 18px;
 
 }
 
-footer nav ul li a {
+.footer-content nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #f0f0f0;
 }
 
-footer nav ul li a:hover {
+.footer-content nav ul li a:hover {
     text-decoration: underline;
+}
+.footer-description{
+    text-align: center;
+    user-select: none;
+}
+.footer-description h2{
+    margin: 12px 0 0 0;
+}
+.footer-description p{
+    margin: 12px 0 0 0;
+    padding-bottom: 8px;
 }
