@@ -1,0 +1,43 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+footer div p q{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+footer nav {
+    display: flex;
+    align-items: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 25px;
+}
+
+footer nav ul li {
+    list-style-type: none;
+    padding: 8px 12px;
+}
+
+footer nav ul li:not(:first-child) {
+    margin-left: 18px;
+
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
