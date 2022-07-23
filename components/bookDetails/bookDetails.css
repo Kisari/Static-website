@@ -71,6 +71,25 @@ h1 ul li p{
 .sub-image img:not(:first-child){
     margin-top: 25px;
 }
+.book-payment{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+.book-payment p {
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+.book-payment button {
+    padding: 12px 16px;
+    width: 80%;
+}
+.book-payment button:hover {
+    color: #fa5379;
+    background-color: #303334;
+}
 .book-description{
     text-align: center;
 }
@@ -82,16 +101,4 @@ h1 ul li p{
     font-size: 1.2rem;
     padding: 12px 16px;
 }
-.book-description button{
-    padding: 12px 16px;
-}
-.price{
-    font-size: 1.4rem;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding-bottom: 0;
-}
-.book-description button:hover{
-    color: #fa5379;
-    background-color: #303334;
-}
+
